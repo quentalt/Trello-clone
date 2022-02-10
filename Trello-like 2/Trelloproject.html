@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  <title>Mini projet Meryem, Quentin, Elhadj </title>
+</head>
+<body>
+    <div class="drag-container"></div>
+   
+<div class="board">
+  <div class="board-column todo">
+    <div class="board-column-container">
+
+ 
+
+      <div class="board-column-header">A faire</div>
+      <div class="board-column-content-wrapper">
+        <div class="board-column-content">
+          <div class="board-item"><div class="board-item-content"><span>Faire des courses</span></div></div>
+          <div class="board-item"><div class="board-item-content"><span>Sortir le chien</span></div></div>
+          <div class="board-item"><div class="board-item-content"><span>Integration</span></div></div>
+          <div class="board-item"><div class="board-item-content"><span>Rendre de projet</span></div></div>
+          <div class="board-item"><div class="board-item-content"><span>Passer un coup d'appel a Mederic<span></div></div>
+        </div>
+      </div>
+      <div class="tasker-container">
+                <ul id="tasks-ul">
+                </ul>
+            </div>
+      
+       <div class="tasker-container">
+                <ul id="tasks-ul">
+                </ul>
+            </div>
+            <div id="task-container" class="task-container">
+                <div id="error-msg" class="error-msg">Has to be atleast 1 letter!</div>
+                <input type="text" id="task" placeholder="to-do">
+                <button type="button" class="btn" onclick="addEvent()">Add item</button>
+                                <button id="remove-task">-</button>
+            </div>
+    </div>
+  </div>
+  <div class="board-column working">
+    <div class="board-column-container">
+      <div class="board-column-header">EN cours</div>
+      <div class="board-column-content-wrapper">
+        <div class="board-column-content">
+          <div class="board-item"><div class="board-item-content"><span>Faire du sport</span></div></div>
+          <div class="board-item"><div class="board-item-content"><span>Prendre une douche</span></div></div>
+          <div class="board-item"><div class="board-item-content"><span>Manger</span></div></div>
+          <div class="board-item"><div class="board-item-content"><span>Dormir</span></div></div>
+          <div class="board-item"><div class="board-item-content"><span>Faire Pipi au lit</span></div></div>
+        </div>
+      </div>
+      <div class="tasker-container">
+                <ul id="tasks-ul">
+                </ul>
+            </div>
+           
+            <div id="task-container" class="task-container">
+                <div id="error-msg" class="error-msg">Has to be atleast 1 letter!</div>
+                <input type="text" id="task1" placeholder="to-do">
+                <button id="add-task" onclick="addEvent1()">+</button>
+            </div>
+    </div>
+  </div>
+  <div class="board-column done">
+    <div class="board-column-container">
+      <div class="board-column-header">Fait</div>
+      <div class="board-column-content-wrapper">
+        <div class="board-column-content">
+          <div class="board-item"><div class="board-item-content"><span>Tout casser </span></div></div>
+          <div class="board-item"><div class="board-item-content"><span>Prendre des congés</span></div></div>
+          <div class="board-item"><div class="board-item-content"><span>Aller a Marseille</span></div></div>
+          <div class="board-item"><div class="board-item-content"><span>Faire du shopping</span></div></div>
+          <div class="board-item"><div class="board-item-content"><span>Avoir les proches vide</span></div></div>
+        </div>
+      </div>
+      
+       <div class="tasker-container">
+                <ul id="tasks-ul">
+                </ul>
+            </div>
+            <div id="task-container" class="task-container">
+                <div id="error-msg" class="error-msg">Has to be atleast 1 letter!</div>
+                <input type="text" id="task2" placeholder="to-do">
+                <button id="add-task" onclick="addEvent2()">+</button>
+            </div>
+    </div>
+  </div>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.2/web-animations.min.js'></script>
+<script src='https://cdn.jsdelivr.net/gh/haltu/muuri@0.9.3/dist/muuri.min.js'></script><script  src="script.js"></script>
+
+ 
+
+</body>
+</html>
+ 
